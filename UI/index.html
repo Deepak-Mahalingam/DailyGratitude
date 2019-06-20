@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" <head>
+<meta charset='utf-8'>
+<link rel="manifest" href="/manifest.json">
+<meta name="theme-color" content="#ccfaeb" />
+<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+<title>Page Title</title>
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+<link rel='stylesheet' type='text/css' media='screen' href='index.css'>
+</head>
+
+<body>
+    <nav class="heading" role="navigation">
+        <div class="title">Daily Gratitude</div>
+    </nav>
+    <section id="gratitude-entries">
+
+    </section>
+
+    <section id="new-entry">
+        <h4>I am grateful to God today for:</h4>
+        <textarea id="gratitude" onkeyup="toggleSave()"></textarea>
+        <button type="button" id="save" class="saveDisabled" onclick="fadeOut()">Save</button>
+
+        <section id="hide" onclick="hideForm()">
+            x
+        </section>
+    </section>
+
+    <section id="add" onclick="showForm()">
+        +
+    </section>
+    <script src="main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,141 @@
+nav{
+    height: 50px;
+    background-color: rgb(27, 27, 102);
+    color:white;
+    margin: 0px auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+ 
+}
+
+.title{
+    
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16pt;
+    letter-spacing: 0.3em;
+    color: #ccfaeb;
+}
+
+body{
+    margin: 0px auto;
+    top:0px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#gratitude-entries{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top:20px;
+    padding: 20px;
+    justify-content: flex-start;
+    
+}
+
+
+#gratitude-entries div{
+    border: 1px solid rgb(161, 191, 201);
+    width: 100%;
+    padding: 10px;
+    background-color: rgb(228, 247, 253);
+    border-radius: 10px;
+    margin-top: 10px;
+
+}
+#new-entry{
+    margin: 0px auto;
+    position: fixed;
+    top: 50px;  
+    height: 300px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color:rgb(220, 228, 243)
+}
+
+#new-entry h4{
+    width: 80%;
+    font-weight: normal;
+}
+#new-entry textarea{
+    border-radius: 5px;
+    width:80%;
+    height: 150px;
+}
+#new-entry button{
+    position: relative;
+    top:10px;
+    width:80%;
+    color:white;
+    border-radius: 5px;
+    height: 30px;
+
+}
+.saveDisabled{
+    background-color: grey;
+}
+.saveEnabled{
+    background-color: rgb(27, 27, 102); 
+}
+@keyframes example {
+   from{opacity: 1;}
+   to{opacity: 0;display: hidden}
+}
+.fadeOut{
+    background-color: white;
+    animation-name: example;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes example2 {
+    from{opacity: 0;}
+    to{opacity: 1;display: flex}
+ }
+ .fadeIn{
+     background-color:  rgb(230, 252, 244);
+     animation-name: example2;
+     animation-duration: 1s;
+     animation-fill-mode: forwards;
+ }
+
+#add{
+    position: fixed;
+    height: 50px;
+    width:50px;
+    border-radius: 25px;
+    background-color:  rgb(27, 27, 102); 
+    text-align: center;
+    font-size: 25pt;
+    color:white;
+    font-weight: bold;
+    bottom: 15px;
+    right: 15px;
+    box-shadow: 5px 5px 10px grey;
+    z-index: 999999;
+
+}
+
+#add:active:hover{
+    box-shadow: 5px 5px 5px grey;
+}
+
+#hide{
+    position: fixed;
+    top: 65px;
+    right: 10px;
+    height: 25px;
+    width: 25px;
+    border-radius: 15px;
+    border: 0.5px solid;
+    border-color:rgb(27, 27, 102); 
+    background-color: rgb(214, 237, 252);
+    color:rgb(27, 27, 102); 
+    text-align: center;
+    font-weight: bold;
+}

@@ -1,0 +1,21 @@
+{
+    "short_name": "Daily Gratitude",
+    "name": "Daily Gratitude",
+    "icons": [
+      {
+        "src": "splash1.png",
+        "type": "image/png",
+        "sizes": "192x192"
+      },
+      {
+        "src": "splash2.png",
+        "type": "image/png",
+        "sizes": "512x512"
+      }
+    ],
+    "start_url": "/index.html",
+    "background_color": "#ccfaeb",
+    "display": "standalone",
+    "scope": "/",
+    "theme_color": "#ccfaeb"
+  }
